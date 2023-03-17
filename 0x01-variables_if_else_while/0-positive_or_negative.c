@@ -2,16 +2,14 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-*main - (void)  file that prints random numbers
-*either positive, negative or zero
+*main - Entry point
 *
-*return: (0) (n)  success
+*Description: The program generates a random number
+*and prints out if it is either positive, negative or zero
+*
+*Return: Always 0 (Success)
 */
 int main(void)
-/*
- * main - This is the main function to return 0 
- * return: Always 0 Success
- */
 {
 	int n;
 
