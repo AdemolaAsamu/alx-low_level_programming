@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - File of printing random numbers
- * return: 0 success
+ * main: file of printing description of  random numbers either positive, negative or zero
+ * return: (0) (n)  success
  */
 int main(void)
 {
