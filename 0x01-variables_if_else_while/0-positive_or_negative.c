@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main: file that print  random numbers either positive, negative or zero
- * return: (0) (n)  success
- */
+* main: file that print  random numbers either positive, negative or zero
+* return: (0) (n)  success
+*/
 int main(void)
 {
 	int n;
