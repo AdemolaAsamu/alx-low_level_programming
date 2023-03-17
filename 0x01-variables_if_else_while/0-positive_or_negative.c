@@ -9,7 +9,7 @@
 */
 int main(void)
 /*
- * This is a main section to handle all requirements
+ * main - This is the main function to return 0 
  * return: Always 0 Success
  */
 {
