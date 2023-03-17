@@ -2,12 +2,13 @@
 #include <stdlib.h>
 #include <time.h>
 /**
-* main:(void)  file that prints (void) random numbers 
+* main - (void)  file that prints (void) random numbers 
 * either positive, negative or zero
 *
 * return: (0) (n)  success
 */
 int main(void)
+/*This is a main section to handle all requirements */
 {
 	int n;
 
