@@ -12,16 +12,22 @@
 int main(void)
 {
 	/* The for Statement loop to print A - Z */
-	int i = 0;
+	int i;
 	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
 
-	do {
+	for (i = 0; i < 26; i++)
+	{
 		/* This is a break statement that is passed i=4/16*/
-		if (i == 4 || i == 16)
+		if (i == 4)
+		{
 			continue;
+		}
+		if (i == 16)
+		{
+			continue;
+		}
 		putchar(alphabet[i]);
-		i++;
-	} while (i < 26);
+	}
 
 	putchar('\n');
 	return (0);
