@@ -3,7 +3,7 @@
 /**
  * main - Entry point
  *
- * Description: The program prints out the 
+ * Description: The program prints out the
  * alphabets in lower case, doesnt allow printf or puts
  * strictly uses putchar
  *
@@ -11,9 +11,13 @@
  */
 int main(void)
 {
-	char alphabet;
+	/* The for Statement loop to print A - Z */
+	for (int x = 'A' ; x <= 'Z' ; x++)
+	{
+		int lower_x = tolower(x);
+		putchar(lower_x);
 
-	alphabet = {a...z}
-	putchar("alphabet")
+	}
+	putchar('\n');
 	return (0);
 }
