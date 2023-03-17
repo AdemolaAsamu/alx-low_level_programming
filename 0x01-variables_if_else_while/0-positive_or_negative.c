@@ -14,17 +14,17 @@ int main(void)
 /* If statements to confirm the type of entry selection*/
 	if (n > 0)
 	{	
-		printf("%d is positive \n",n);
+		printf("%d is positive\n",n);
 		return (n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero \n",n);
+		printf("%d is zero\n",n);
 		return (n);
 	}
 	else if (n < 0 )
 	{
-		printf("%d is negative \n",n);
+		printf("%d is negative\n",n);
 		return (n);
 	}
 	return (0);
