@@ -5,23 +5,22 @@
  * main - Entry point
  *
  * Description: The program takes the last digit of a random
- * number and prints out 
+ * number and prints out
  *
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	int n;
 	int last_digit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-	
-	/* define the int for the last digit of the random number */
+	/* define the int last digit of the random number */
 
 	last_digit = n % 10;
 
-	/* We commence with the If statement to determine if the conditions are satisfied*/
+	/* We commence with the If statement to determine the conditions are satisfied*/
 	if (last_digit > 5)
 	{
 		printf("Last digit of %d is %d and is greater than 5\n", n, last_digit);
