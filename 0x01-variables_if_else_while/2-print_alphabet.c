@@ -12,10 +12,12 @@
 int main(void)
 {
 	/* The for Statement loop to print A - Z */
-	for (int x = 'A' ; x <= 'Z' ; x++)
+	int i;
+	char alphabet[26] = "abcdefghijklmnopqrstuvwxyz";
+
+	for (i = 0 ; i < 26 ; i++)
 	{
-		int lower_x = tolower(x);
-		putchar(lower_x);
+		putchar(alphabet[i]);
 
 	}
 	putchar('\n');
