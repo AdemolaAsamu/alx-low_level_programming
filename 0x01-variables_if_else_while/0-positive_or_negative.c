@@ -19,19 +19,19 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-		return (n);
+		return (0);
 	}
 	/* Else if to consider the zero value of random number*/
 	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
-		return (n);
+		return (0);
 	}
 	/* else if to confirm if the value is negative*/
 	else if (n < 0)
 	{
 		printf("%d is negative\n", n);
-		return (n);
+		return (0);
 	}
 	return (0);
 }
