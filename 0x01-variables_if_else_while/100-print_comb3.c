@@ -19,15 +19,14 @@ int main(void)
 	{
 		for (j = 48 ; j < 58 ; j++)
 		{
-			if (i > j)
+			if (j > i)
 			{
 				putchar(i);
 				putchar(j);
-				putchar(',');
-				putchar(' ');
-				if (i == j)
+				if (i != 56 || j != 57)
 				{
-					continue;
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
