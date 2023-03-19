@@ -12,7 +12,7 @@
 int main(void)
 {
 	/*declaration of variables*/
-	int i, j, k, l;
+	int i, j;
 
 	/*The for loop to be used to control the inputs*/
 
