@@ -31,4 +31,4 @@ Write a C program that prints exactly "Programming is like building a multilingu
 
 Use the function puts
 You are not allowed to use printf
-Your program should end with the value 0
+Your program should end with the value 07 : Intel - Write . script that generate the assembly code (intel syntax) of a C code and save it in an Output file
