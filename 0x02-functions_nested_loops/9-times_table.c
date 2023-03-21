@@ -2,7 +2,7 @@
 /**
  * times_table - This function prints 9 tables
  *
- * @variable: To handle the manipulation in function
+ * @n m p: To handle the manipulation in function
  *
  * Return: no return
  */
