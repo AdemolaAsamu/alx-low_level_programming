@@ -2,26 +2,28 @@
 /**
  * times_table - This function prints 9 tables
  *
- * @n m p: To handle the manipulation in function
+ * To handle the manipulation in function
  *
  * Return: no return
  */
 void times_table(void)
 {
-	int n, m, p;
+	int i;
+	int j;
+	int p;
 
-	for (n = 0; n <= 9; n++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (m = 0; m <= 9; m++)
+		for (j = 0; j <= 9; j++)
 		{
-			p = n * m;
+			p = i * j;
 
-			if (m == 0)
+			if (j == 0)
 			{
 				_putchar(p + '0');
 			}
 
-			if (p < 10 && m != 0)
+			if (p < 10 && j != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
