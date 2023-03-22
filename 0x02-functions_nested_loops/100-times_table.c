@@ -1,25 +1,10 @@
 #include "main.h"
 /**
- * print_times_table - Entry point
+ * print_times_table - prints the n times table
+ * Description: collects numners
  *
- * print_times_table: This program executes bla
- * @n: integer for the last level function
- *
- * put_100: To handle the manipulation in function
- * @p: integer to be received for fxt put_100
- *
- * Return: no return
+ * @n: number of times table
  */
-void put_100(int p)
-{
-	_putchar(',');
-	_putchar(' ');
-	_putchar(' ');
-	_putchar((p / 100) + '0');
-	_putchar(((p % 100) / 10) + '0');
-	_putchar((p % 10) + '0');
-}
-
 void print_times_table(int n)
 {
 	int i;
@@ -42,18 +27,20 @@ void print_times_table(int n)
 					_putchar(' ');
 					_putchar(' ');
 					_putchar(p + '0');
-				}
-				else if (p >= 10 && p < 100)
+				} else if (p >= 10 && p < 100)
 				{
 					_putchar(',');
 					_putchar(' ');
 					_putchar(' ');
 					_putchar((p / 10) + '0');
 					_putchar((p % 10) + '0');
-				}
-				else if (p >= 100)
+				} else if (p >= 100)
 				{
-					put_100(p);
+					_putchar(',');
+					_putchar(' ');
+					_putchar((p / 100) + '0');
+					_putchar(((p % 100) / 10) + '0');
+					_putchar((p % 10) + '0');
 				}
 			}
 			_putchar('\n');
