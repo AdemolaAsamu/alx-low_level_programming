@@ -1,13 +1,25 @@
 #include "main.h"
 /**
- * print_times_table - This function prints n tables
+ * print_times_table - Entry point
  *
- * To handle the manipulation in function
+ * print_times_table: This program executes bla
+ * @n: integer for the last level function
  *
- * @n: integer to be recived to limit level of return
+ * put_100: To handle the manipulation in function
+ * @p: integer to be received for fxt put_100
  *
  * Return: no return
  */
+void put_100(int p)
+{
+	_putchar(',');
+	_putchar(' ');
+	_putchar(' ');
+	_putchar((p / 100) + '0');
+	_putchar(((p % 100) / 10) + '0');
+	_putchar((p % 10) + '0');
+}
+
 void print_times_table(int n)
 {
 	int i;
@@ -41,12 +53,7 @@ void print_times_table(int n)
 				}
 				else if (p >= 100)
 				{
-					_putchar(',');
-					_putchar(' ');
-					_putchar(' ');
-					_putchar((p / 100) + '0');
-					_putchar(((p % 100) / 10) + '0');
-					_putchar((p % 10) + '0');
+					put_100(p);
 				}
 			}
 			_putchar('\n');
