@@ -3,7 +3,7 @@
  * more_numbers - function that prints 1 through 14
  * in 10 places, while using putchar
  *
- * Return: 0 (Success)
+ * Return: void
  */
 void more_numbers(void)
 {
@@ -18,5 +18,4 @@ void more_numbers(void)
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
