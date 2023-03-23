@@ -1,9 +1,6 @@
 #include "main.h"
 /**
- * more_numbers - function that prints 1 through 14
- * in 10 places, while using putchar
- *
- * Return: void
+ * more_numbers - print more numbers
  */
 void more_numbers(void)
 {
