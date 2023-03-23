@@ -4,21 +4,22 @@
  *
  * @n: this determines the lenght of the line
  *
- * Returns: 0 (Success)
  */
 void print_line(int n)
 {
 	int k, i;
 
 	k = 95;
-
-	for (i = 0; i < n; i++)
+	if (n <= 0)
 	{
-		if (n > 0)
+		_putchar('\n');
+	}
+	else
+	{
+		for (i = 0; i < n; i++)
 		{
 			_putchar(k);
 		}
+		_putchar('\n');
 	}
-	_putchar('\n');
-	return (0);
 }
