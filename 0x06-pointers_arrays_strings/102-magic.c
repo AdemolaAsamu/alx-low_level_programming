@@ -1,5 +1,8 @@
 #include <stdio.h>
-
+/**
+ * main - function that points to n
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
 	int n;
