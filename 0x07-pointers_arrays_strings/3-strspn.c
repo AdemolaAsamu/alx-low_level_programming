@@ -13,7 +13,11 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	int i, j, len;
 
-	len = strlen(accept);
+	/* Calculate the length of the accept string*/
+	while (accept[len] != '\0')
+	{
+		len++;
+	}
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
