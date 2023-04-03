@@ -5,7 +5,7 @@
  * @s: A pointer to the null-terminated string to search
  * @c: The Character to search for
  *
- * Return: s, NULL
+ * Return: s, 0
  */
 char *_strchr(char *s, char c)
 {
@@ -21,5 +21,5 @@ char *_strchr(char *s, char c)
 	{
 		return (s);
 	}
-	return (NULL);
+	return (0);
 }
