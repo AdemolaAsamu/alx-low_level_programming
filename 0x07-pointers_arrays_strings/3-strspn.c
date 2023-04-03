@@ -6,7 +6,7 @@
  * @s:A pointer to the string to be searched
  * @accept: A pointer to a string of char to be used
  *
- * Return: Always 0
+ * Return: count
  */
 unsigned int _strspn(char *s, char *accept)
 {
@@ -27,10 +27,8 @@ unsigned int _strspn(char *s, char *accept)
 				count++;
 				break;
 			}
-		}
-		if (j == len)
-		{
-			return (count);
+			else if (accept[j + 1] == '\0')
+				return (count);
 		}
 	}
 	return (count);
