@@ -5,7 +5,7 @@
  * @s: Input string
  * @accept: Input string
  *
- * Return: s, 0
+ * Return: 0
  */
 char *_strpbrk(char *s, char *accept)
 {
