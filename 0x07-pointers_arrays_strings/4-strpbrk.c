@@ -3,27 +3,25 @@
  * _strpbrk - searches a string for any of the set bytes
  *
  * @s: Input string
- * @accept: Output tring
+ * @accept: Input string
  *
  * Return: p, 0
  */
 char *_strpbrk(char *s, char *accept)
 {
-	char *p = s;
 
-	while (*p != '\0')
+	while (*s != '\0')
 	{
 		char *q = accept;
 
-		while (*q != '\0')
+		for (int k = 0; accept[k]; k++)
 		{
-			if (*p == *q)
+			if (*s == accept[k])
 			{
-				return (p);
+				return (s);
 			}
-			q++;
 		}
-		p++
+		s++
 	}
 	return (0);
 }
