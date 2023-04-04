@@ -4,10 +4,8 @@
  * print_diagsums - sums of the 2 diagonal
  * of a square matrix
  *
- * @a:
- * @size:
- *
- * Return: 0
+ * @a: input value
+ * @size: input value
  */
 void print_diagsums(int *a, int size)
 {
@@ -15,7 +13,8 @@ void print_diagsums(int *a, int size)
 	int sumdiag2;
 	int i;
 
-	sumdiag1, sumdiag2 = 0, 0;
+	sumdiag1 = 0;
+	sumdiag2 = 0;
 
 	for (i = 0; i < size; i++)
 	{
@@ -27,5 +26,4 @@ void print_diagsums(int *a, int size)
 	}
 
 	printf("%d, %d\n", sumdiag1, sumdiag2);
-	return (0);
 }
