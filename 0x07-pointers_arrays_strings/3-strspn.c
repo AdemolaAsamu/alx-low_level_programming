@@ -3,7 +3,7 @@
  * _strspn - function that gets the length
  * @s: input search string
  * @accept: input pointer to string
- * Return: count
+ * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
