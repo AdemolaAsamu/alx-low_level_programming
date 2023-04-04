@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * _strtsr - function that locates a substring
- *
+ * _strstr - function that locates a substring
  * @haystack: input
  * @needle: input
  *
