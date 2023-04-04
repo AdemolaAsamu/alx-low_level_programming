@@ -1,14 +1,14 @@
 #include "main.h"
 /**
  * _strspn - function that gets the length
- * @s: input search string
+ * @s: input search string pointer
  * @accept: input pointer to string
  * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	unsigned int k;
+	int k;
 
 	while (*s)
 	{
