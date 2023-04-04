@@ -8,10 +8,10 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int w;
+	unsigned int n;
 	int k;
 
-	w = 0;
+	n = 0;
 
 	while (*s)
 	{
@@ -19,15 +19,15 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*s == accept[k])
 			{
-				w++;
+				n++;
 				break;
 			}
 			else if (accept[k + 1] == '\0')
 			{
-				return (w);
+				return (n);
 			}
 		}
 		s++;
 	}
-	return (w);
+	return (n);
 }
