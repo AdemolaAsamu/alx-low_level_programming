@@ -3,8 +3,8 @@
  * _strspn - function that gets the length
  * of a prefix substring
  *
- * @s:A pointer to the string to be searched
- * @accept: A pointer to a string of char to be used
+ * @s: input search string
+ * @accept: input pointer to string
  *
  * Return: count
  */
