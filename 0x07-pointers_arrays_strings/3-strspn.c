@@ -11,20 +11,17 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int count = 0;
-	int i;
+	int accept_chars[256] = {0};
 
-	while (*s)
+	while (*accept != '\0')
 	{
-		for (i = 0; accept[i]; i++)
-		{
-			if (*s == accept[i])
-			{
-				count++;
-				break;
-			}
-			else if (accept[i + 1] == '\0')
-				return (count);
-		}
+		accept_chars[(int) *accept] = 1;
+		accept++;
+	}
+
+	while (*s != '\0' && accept_chars[(int) *s])
+	{
+		count++;
 		s++;
 	}
 	return (count);
