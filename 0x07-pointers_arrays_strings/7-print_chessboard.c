@@ -1,10 +1,7 @@
 #include "main.h"
 /**
- * print_chessboard - Entry point
- *
+ * print_chessboard - function that prints CB
  * @a: Array
- *
- * Return: 0
  */
 void print_chessboard(char (*a)[8])
 {
@@ -19,5 +16,4 @@ void print_chessboard(char (*a)[8])
 		}
 		_putchar('\n');
 	}
-	return (0);
 }
