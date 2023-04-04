@@ -1,33 +1,32 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strspn - function that gets the length
- * @s: input search string pointer
- * @accept: input pointer to string
+ * @s: input search string 
+ * @accept: string containing character list
  * Return: Always 0
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int n;
-	int k;
+	int i, j, k, check;
 
-	n = 0;
+	k = 0;
 
-	while (*s)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		for (k = 0; accept[k]; k++)
+		check = 0;
+		for (j = 0; accept[j] != '\0'; j++)
 		{
-			if (*s == accept[k])
+			uf(s[i] == accept[j])
 			{
-				n++;
-				break;
-			}
-			else if (accept[k + 1] == '\0')
-			{
-				return (n);
+				k++;
+				check = 1;
 			}
 		}
-		s++;
+		if (check == 0)
+		{
+			return (k);
+		}
 	}
-	return (n);
+	return (0);
 }
