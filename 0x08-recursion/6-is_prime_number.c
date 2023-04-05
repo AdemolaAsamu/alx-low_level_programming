@@ -3,7 +3,7 @@
  * is_prime_helper - prime finder
  *
  * @n: input number
- * @i: index 
+ * @i: index
  *
  * Return: 0
  */

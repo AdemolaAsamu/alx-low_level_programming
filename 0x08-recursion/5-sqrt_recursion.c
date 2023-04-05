@@ -7,10 +7,10 @@
  * @high: this is equivalent to n value
  * Return: 0
  */
-int _sqrt_helper(int n, int low, int high)
+long _sqrt_helper(long n, long low, long high)
 {
-	int mid;
-	int square;
+	long mid;
+	long square;
 
 
 	if (low > high)
@@ -18,7 +18,7 @@ int _sqrt_helper(int n, int low, int high)
 		return (-1);
 	}
 
-	
+
 	mid = (low + high) / 2;
 	square = mid * mid;
 
@@ -43,7 +43,7 @@ int _sqrt_helper(int n, int low, int high)
  *
  * Return: 0
  */
-int _sqrt_recursion(int n)
+long _sqrt_recursion(long n)
 {
 	if (n < 0)
 	{
