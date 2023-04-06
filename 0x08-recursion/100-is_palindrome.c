@@ -1,24 +1,12 @@
 #include "main.h"
-/**
- * get_str_len - this function gets the length
- * of the string
- *
- * @s: the string input
- *
- * Return: 0
- */
 int get_str_len(char *s)
 {
-	int len = 0;
-
-	while (*s != '\0')
+	if (*s == '\0')
 	{
-		len++;
-		s++;
+		return (0);
 	}
-	return (len);
+	return (1 + get_str_len(s + 1));
 }
-
 /**
  * is_palindrome_helper - this function helps the palindrome
  *
