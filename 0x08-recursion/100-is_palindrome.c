@@ -1,4 +1,11 @@
 #include "main.h"
+/**
+ * get_str_len - this fxn returns the lenght
+ * of a string
+ *
+ * @s: Input strng
+ * Return: 0
+ */
 int get_str_len(char *s)
 {
 	if (*s == '\0')
