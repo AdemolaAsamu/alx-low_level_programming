@@ -61,7 +61,7 @@ int main(int argc, char *argv[])
 {
 	int product;
 
-	if (argc > 1 && argc < 4)
+	if (argc == 3)
 	{
 		product = _atoi(argv[1]) * _atoi(argv[2]);
 		printf("%d\n", product);
