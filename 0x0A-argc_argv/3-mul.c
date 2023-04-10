@@ -55,7 +55,7 @@ int _atoi(char *s)
  * @argc: count of arg
  * @argv: pointer to array of arg
  *
- * Return: 0
+ * Return: 0 (Success), 1 (Error)
  */
 int main(int argc, char *argv[])
 {
@@ -69,6 +69,7 @@ int main(int argc, char *argv[])
 	else
 	{
 		printf("Error\n");
+		return (1);
 	}
 
 	return (0);
