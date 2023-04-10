@@ -8,9 +8,16 @@
  *
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc __attribute__((unused)), char *argv[])
 {
-	printf("%s\n",argv[0]);
+	/*char *name = argv[0];
+
+	while (*name)
+	{
+		_putchar(*name++);
+	}
+	_putchar('\n');*/
+	printf("%s\n", *argv);
 	return (0);
 }
 
