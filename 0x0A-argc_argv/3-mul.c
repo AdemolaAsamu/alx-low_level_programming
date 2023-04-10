@@ -59,12 +59,12 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int product;
+	long long product;
 
 	if (argc > 1 && argc < 4)
 	{
 		product = _atoi(argv[1]) * _atoi(argv[2]);
-		printf("%d\n", product);
+		printf("%lld\n", product);
 	}
 	else
 	{
