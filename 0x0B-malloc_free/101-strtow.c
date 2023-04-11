@@ -36,11 +36,10 @@ void my_strncpy(char *dest, char *src, int n)
 		dest[i] = '\0';
 }
 /**
- * strtow - function splits a string ino two words
+ * strtow - strings of two words
  *
  * @str: input string to split
- *
- * Result: 0
+ * Return: this returns the matrix
  */
 char **strtow(char *str)
 {
@@ -50,17 +49,13 @@ char **strtow(char *str)
 
 	len = my_strlen(str);
 	words = 0;
-
 	for (i = 0; i < len; i++)
 	{
 		if (str[i] != ' ' && (i == 0 || str[i - 1] == ' '))
-		{
 			words++;
-		}
 	}
 	if (words == 0)
 		return (NULL);
-
 	matrix = malloc((words + 1) * sizeof(char *));
 	if (matrix == NULL)
 		return (NULL);
@@ -70,12 +65,9 @@ char **strtow(char *str)
 		{
 			j = i;
 			while (j < len && str[j] != ' ')
-			{
 				j++;
-			}
 			word_len = j - i;
 			word = malloc(word_len + 1);
-
 			if (word == NULL)
 			{
 				for (l = 0; l < k; l++)
