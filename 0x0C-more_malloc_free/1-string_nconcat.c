@@ -19,7 +19,7 @@ int my_strlen(char *s)
 	return (len);
 }
 /**
- * memcpy - main function entry
+ * my_memcpy - main function entry
  *
  * @dest: input variable
  * @src: input variable
@@ -28,9 +28,9 @@ int my_strlen(char *s)
  */
 void *my_memcpy(void *dest, void *src, unsigned int n)
 {
-	char *d = (char*)dest;
+	char *d = (char *)dest;
 
-	char *s = (char*)src;
+	char *s = (char *)src;
 
 	while (n--)
 		*d++ = *s++;
@@ -52,26 +52,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	len1 = 0;
 	len2 = 0;
-
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-	{
 		s2 = "";
-	}
-
 	len1 = my_strlen(s1);
 	len2 = my_strlen(s2);
-
 	if (n >= len2)
 		n = len2;
-
 	result = malloc(len1 + n + 1);
 	if (result == NULL)
 		return (NULL);
 	my_memcpy(result, s1, len1);
 	my_memcpy(result + len1, s2, n);
 	result[len1 + n] = '\0';
-
 	return (result);
 }
