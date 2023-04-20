@@ -5,13 +5,13 @@
  * sum_them_all - Main entry function
  * @n: input int parameter
  * @...: input variable number of parameters
- * Return: if n == 0 give 0 else - sum of all param
+ * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list all;
 	unsigned int i;
-	int sum;
+	unsigned int sum;
 
 	va_start(all, n);
 
@@ -23,7 +23,6 @@ int sum_them_all(const unsigned int n, ...)
 	{
 		sum += va_arg(all, int);
 	}
-	/*va_end(all);*/
-	return (sum);
 	va_end(all);
+	return (sum);
 }
