@@ -5,7 +5,7 @@
  * sum_them_all - Main entry function
  * @n: input int parameter
  * @...: input variable number of parameters
- * Return: void
+ * Return: if n == 0 give 0 else - sum of all param
  */
 int sum_them_all(const unsigned int n, ...)
 {
