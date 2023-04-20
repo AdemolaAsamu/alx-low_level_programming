@@ -1,4 +1,5 @@
 #include "function_pointers.h"
+#include <stddef.h>
 /**
  * print_name - main function entry point
  * @name: Input
@@ -8,5 +9,6 @@
  */
 void print_name(char *name, void (*f)(char *))
 {
-	f(name);
+	if (f != NULL)
+		f(name);
 }
