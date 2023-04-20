@@ -4,7 +4,6 @@
 /**
  * sum_them_all - Main entry function
  * @n: input int parameter
- * @...: input variable number of parameters
  * Return: sum
  */
 int sum_them_all(const unsigned int n, ...)
