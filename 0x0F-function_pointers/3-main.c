@@ -14,7 +14,8 @@ int main(int argc, char **argv)
 	char *op;
 	int a, b;
 
-	if (argc != 4) exit(98);
+	if (argc != 4)
+		exit(98);
 
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
