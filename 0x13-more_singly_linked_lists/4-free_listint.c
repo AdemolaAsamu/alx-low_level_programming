@@ -7,8 +7,10 @@
 void free_listint(listint_t *head)
 {
 	listint_t *cnode;
-	for (; head != NULL; head = head->next)
+
+	if (head != NULL)
 	{
+		head = head->next;
 		cnode = head;
 		free(cnode);
 	}
