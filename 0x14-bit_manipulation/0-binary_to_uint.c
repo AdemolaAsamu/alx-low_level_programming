@@ -9,7 +9,7 @@ unsigned int power(unsigned int base, unsigned int exponent);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int bin, len, i;
-	
+
 	len = strlen(b);
 	bin = 0;
 	if (b == NULL)
