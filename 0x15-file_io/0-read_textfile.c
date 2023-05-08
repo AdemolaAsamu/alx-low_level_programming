@@ -10,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 {
 	FILE *fd;
 	char *holder;
-	size_t len_read, i;
+	ssize_t len_read, len_write, i;
 
 	if (filename == NULL)
 		return (0);
@@ -34,6 +34,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	}
 	for (i = 0; i < len_read; i++)
 		_putchar(holder[i]);
+	len_write = fwrite(holder, sizeof(char), len_read, stdout);
+	if (len_write != len_read)
+	{
+		free(holder);
+		fclose(fd);
+		return (0);
+	}
 
 	fclose(fd);
 	free(holder);
