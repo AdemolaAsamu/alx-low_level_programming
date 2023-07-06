@@ -10,7 +10,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 	unsigned long int checkr;
 
 	checkr = sizeof(unsigned long int) * 8;
-	
+
 	if (!n || index >= checkr)
 		return (-1);
 	*n |= (1UL << index);
