@@ -2,7 +2,7 @@
 #include <math.h>
 unsigned int power(unsigned int base, unsigned int exponent);
 /**
- * binary-to-uint - Function main entry binary
+ * binary_to_uint - Function main entry binary
  * @b: input character
  * Return: The binary value is returned
  */
