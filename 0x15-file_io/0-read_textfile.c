@@ -25,6 +25,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		fclose(fd);
 		return (0);
 	}
+	for (i = 0; i < len_read; i++)
+		_putchar(holder[i]);
 	len_read = fread(holder, sizeof(char), letters, fd);
 	if (len_read == 0)
 	{
