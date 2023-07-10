@@ -37,8 +37,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	len_write = fwrite(holder, sizeof(char), len_read, stdout);
 	if (len_write != len_read)
 	{
-		free(holder);
 		fclose(fd);
+		free(holder);
 		return (0);
 	}
 
