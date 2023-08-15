@@ -80,3 +80,40 @@ Write a function that deletes the node at index index of a listint_t linked list
 Prototype: int delete_nodeint_at_index(listint_t **head, unsigned int index);
 where index is the index of the node that should be deleted. Index starts at 0
 Returns: 1 if it succeeded, -1 if it failed
+0-main.c
+0-print_listint.c
+10-delete_nodeint.c
+10-main.c
+1-listint_len.c
+1-main.c
+2-add_nodeint.c
+2-main.c
+3-add_nodeint_end.c
+3-main.c
+4-free_listint.c
+4-main.c
+5-free_listint2.c
+5-main.c
+6-main.c
+6-pop_listint.c
+7-get_nodeint.c
+7-main.c
+8-main.c
+8-sum_listint.c
+9-insert_nodeint.c
+9-main.c
+a
+b
+c
+d
+e
+f
+g
+git
+h
+i
+j
+k
+lists.h
+README.md
+URM
