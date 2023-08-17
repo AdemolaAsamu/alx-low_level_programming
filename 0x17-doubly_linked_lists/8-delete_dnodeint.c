@@ -31,9 +31,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		return (-1);
 	buffer = exist;
 	if (buffer->prev != NULL)
-		buffer->prev->next = temp->next;
+		buffer->prev->next = buffer->next;
 	if (buffer->next != NULL)
-		buffer->->prev = buffer->prev;
+		buffer->next->prev = buffer->prev;
 	free(buffer);
 	return (1);
 }
