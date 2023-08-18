@@ -1,7 +1,9 @@
-Alx-low_level_programming
+This is the README for the Alx-Low Level Program Repository
+<AUTHOR>
 
-This has the directory for 
+<Ademola ASAMU>
 
+List of Components of Repo
 0x00-hello_world
 0x01-variables_if_else_while
 0x02-functions_nested_loops
@@ -23,6 +25,7 @@ This has the directory for
 0x13-more_singly_linked_lists
 0x14-bit_manipulation
 0x15-file_io
+0x17-doubly_linked_lists
 documentation_file
 git
 README.md
